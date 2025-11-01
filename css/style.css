@@ -29,22 +29,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   margin-top: 0;
 }
 
 .logo {
-  max-width: 100%;
+  display: block;
   width: 5vw;
-  height: 2vw;
-  margin-top: 35px;
+  height: auto;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 80px;
   margin-right: 20px;
+  margin-top: 0px;
 }
 
 nav ul li {
@@ -52,11 +53,63 @@ nav ul li {
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 nav ul li:hover {
-  border-top: solid var(--main-color);
+  border-top-color: solid var(--main-color);
   color: var(--main-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.search-form {
+  display: flex;
+  margin: 20px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.search-font {
+  color: black;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.location-input {
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  border-left: none;
+  border-right: none;
+  padding: 15px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.location-input::placeholder {
+  color: black;
+}
+
+.search-button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
+}
+
+.loupe {
+  display: none;
 }
 
 a {
@@ -202,6 +255,17 @@ a {
 
   nav ul li:hover {
     border-bottom: solid var(--main-color);
-    border-top: none;
+    border-top-color: transparent;
+  }
+  .loupe {
+    display: inline;
+    color: white;
+  }
+
+  .span-search {
+    display: none;
+  }
+  .search-button {
+    border-radius: 15px 15px 15px 15px;
   }
 }
