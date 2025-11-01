@@ -180,6 +180,15 @@ h1 {
 
 .card-title {
   font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.afficher-plus {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
 
 .euro {
@@ -213,6 +222,7 @@ h1 {
   height: 136px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
 }
 
 .hebergements-cards {
@@ -231,6 +241,18 @@ h1 {
   ); /*pour 3 cartes par ligne avec un gap de 30px (2 gaps * 30px / 3) */
   flex-grow: 1;
   box-sizing: border-box;
+}
+
+.card-subtitle {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.hebergements-cards .card-rating {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 /****** Populaires ***********/
