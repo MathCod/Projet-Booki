@@ -120,13 +120,13 @@ h1 {
 .filtres-principal {
   display: flex;
   font-weight: bold;
-  gap: 30px;
+  gap: 15px;
   margin: 40px 0px;
 }
 
 .filtres-second {
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 .filtres-third {
@@ -135,7 +135,7 @@ h1 {
   border: solid 2px #d9d9d9;
   border-radius: 50px;
   padding: 0px 20px;
-  gap: 10px;
+  gap: 15px;
 }
 
 .filtres-third:hover {
@@ -189,6 +189,7 @@ h1 {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .euro {
@@ -220,7 +221,7 @@ h1 {
 
 .hebergements-cards img {
   width: 100%;
-  height: 136px;
+  height: 113px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
@@ -355,8 +356,9 @@ h1 {
 /****** Footer ***********/
 .footer-container {
   background-color: var(--main-bg-color);
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 10px 20px;
   display: flex;
+  font-size: 1.1rem;
 }
 
 .footer-container ul {
@@ -370,6 +372,10 @@ h1 {
 
 .footer-section {
   width: 50%;
+}
+
+.footer-title {
+  margin-bottom: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
