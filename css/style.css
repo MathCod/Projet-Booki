@@ -612,13 +612,11 @@ h1 {
   .populaires-cards,
   .hebergements-cards {
     flex-direction: column;
-    padding-top: 0;
     gap: 0px;
   }
 
   .hebergements-cards {
     gap: 10px;
-    margin-top: 10px;
   }
 
   .populaires-cards a {
@@ -627,7 +625,6 @@ h1 {
 
   .hebergements-cards a {
     width: 100%;
-    flex-grow: 0;
   }
 
   .populaires-cards .card {
@@ -651,10 +648,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-
-  .card-no-padd {
-    height: auto;
   }
 
   /*** Footer ***/
