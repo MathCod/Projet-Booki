@@ -124,6 +124,12 @@ h1 {
   margin: 40px 0px;
 }
 
+.filtres-all {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
 .filtres-second {
   display: flex;
   gap: 15px;
@@ -454,8 +460,8 @@ h1 {
 
   .logo {
     width: 20vw;
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   nav {
@@ -488,7 +494,6 @@ h1 {
     border-top-color: transparent;
   }
 
-  /* --- titre, paragraphe, formulaire, filtres, info --- */
   .first-part {
     padding: 0 20px;
     margin-top: 30px;
@@ -510,8 +515,13 @@ h1 {
 
   /* --- Formulaire de recherche --- */
   .search-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     height: 50px;
     position: relative;
     border: 1px solid var(--main-bg-color);
@@ -519,6 +529,8 @@ h1 {
     overflow: hidden;
     box-shadow: none;
     background-color: white;
+    box-sizing: border-box;
+    flex-grow: 1;
   }
 
   .search-font {
@@ -528,6 +540,7 @@ h1 {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: black;
     font-size: 1.1rem;
     border-radius: 15px 0 0 15px;
@@ -589,6 +602,13 @@ h1 {
     margin: 0;
   }
 
+  .filtres-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
   .filtres-second {
     width: 100%;
     flex-wrap: wrap;
@@ -638,46 +658,79 @@ h1 {
     flex-direction: column;
   }
 
-  .hebergements,
-  .populaires {
+  .hebergements-and-populaires section {
     width: 100%;
-    border-radius: 0; /* Pas de bords arrondis pour ces sections sur mobile, comme dans l'image */
-    padding: 30px 20px; /* Ajuste le padding interne */
+    border-radius: 0;
+    padding: 30px 20px;
     box-sizing: border-box;
-    background-color: white; /* Fond blanc pour les hébergements */
   }
-  .hebergements {
-    order: 2; /* Place la section hébergements APRES populaires sur mobile */
-    margin-bottom: 0; /* Supprime la marge du bas */
+
+  .hebergements-and-populaires .hebergements {
+    order: 2;
+    margin-bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 0;
   }
+
   .populaires {
-    order: 1; /* Place la section populaires EN PREMIER sur mobile */
-    margin-top: 0; /* Pas de marge au-dessus */
-    padding-bottom: 30px; /* Plus de padding en bas si la section suivante a un fond blanc */
-    background-color: var(
-      --main-bg-color
-    ); /* Garde le fond gris pour populaires */
-  }
-  .populaires-title {
-    margin-bottom: 20px; /* Espace sous le titre des populaires */
-  }
-  .populaires-cards {
-    flex-direction: column; /* Empile les cartes populaires */
-    gap: 15px; /* Espacement entre les cartes */
-  }
-  .populaires-cards a {
-    width: 100%; /* Les cartes populaires prennent toute la largeur */
+    order: 1;
+    margin-top: 0;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 0;
   }
 
-  /* Ajoutez ces styles pour les cartes d'hébergements */
+  .populaires-title h2 {
+    margin-bottom: 0;
+  }
+
+  .populaires-cards,
   .hebergements-cards {
-    flex-direction: column; /* Empile les cartes d'hébergements */
-    gap: 15px; /* Espacement entre les cartes */
-  }
-  .hebergements-cards a {
-    width: 100%; /* Les cartes d'hébergements prennent toute la largeur */
-    flex-grow: 0; /* Ne s'étirent plus, juste la largeur */
+    flex-direction: column;
+    padding-top: 0;
+    gap: 0px;
   }
 
-  /* ... le reste de vos media queries ... */
+  .hebergements-cards {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .hebergements-cards a {
+    width: 100%;
+    flex-grow: 0;
+  }
+
+  .populaires-cards .card {
+    margin-top: 15px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .afficher-plus {
+    margin-top: 15px;
+  }
+
+  .activites-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-no-padd {
+    width: 100%;
+    flex-grow: 1;
+  }
 }
